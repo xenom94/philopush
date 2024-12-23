@@ -6,15 +6,15 @@
 #    By: iabboudi <iabboudi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/20 22:42:32 by iabboudi          #+#    #+#              #
-#    Updated: 2024/12/20 22:42:33 by iabboudi         ###   ########.fr        #
+#    Updated: 2024/12/23 22:23:16 by iabboudi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = philo
-SRCS = main.c init.c routine.c 
+SRCS = main.c init.c routine.c stop_and_join.c tools.c helper.c
 OBJS = $(SRCS:.c=.o)
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -fsanitize=address -g3
+CFLAGS = -Wall -Wextra -Werror 
 
 all: $(NAME)	
 $(NAME): $(OBJS)

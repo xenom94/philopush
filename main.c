@@ -6,7 +6,7 @@
 /*   By: iabboudi <iabboudi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 22:42:29 by iabboudi          #+#    #+#             */
-/*   Updated: 2024/12/20 22:42:30 by iabboudi         ###   ########.fr       */
+/*   Updated: 2024/12/23 22:15:31 by iabboudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,7 @@ int	main(int ac, char **av)
 		return (1);
 	death_check(&data);
 	join_thread(&data);
+	free(data.philo);
+	free(data.forks);
 	return (0);
 }
